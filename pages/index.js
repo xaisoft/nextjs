@@ -4,9 +4,9 @@ import styles from '../styles/Home.module.css'
 export default function Home({data}) {
   return (
     <div>
-    {data.map(user=>(
-     <div key={user.id}>{user.name}</div>
-     )}
+      {data.map(user=>(
+        <div key={user.id}>{user.name}</div>
+     ))}
     </div>
   )
 }
