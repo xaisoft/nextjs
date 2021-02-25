@@ -3,9 +3,11 @@ import styles from '../styles/Home.module.css'
 
 export default function Home({data}) {
   return (
-    <div>
+    <div className="flex flex-col items-center">
+      
       {data.map(user=>(
-        <div key={user.id} className={styles.title}>{user.name}</div>
+        <div className="pt-6 text-6xl text-blue-800"
+         key={user.id} >{user.name}</div>
      ))}
     </div>
   )
