@@ -5,7 +5,7 @@ export default function Home({data}) {
   return (
     <div>
       {data.map(user=>(
-        <div key={user.id}>{user.name}</div>
+        <div key={user.id} className={styles.title}>{user.name}</div>
      ))}
     </div>
   )
